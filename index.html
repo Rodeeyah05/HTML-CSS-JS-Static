@@ -1,16 +1,258 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Video Editor Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>AJ</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Alex Johnson</span>
+                <h2 class="hero-subtitle">Professional Video Editor</h2>
+                <p class="hero-description">
+                    Bringing stories to life through creative video editing. Specializing in cinematic storytelling, 
+                    commercial content, and digital media production with 5+ years of experience.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <div class="video-icon">🎬</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate video editor with expertise in creating compelling visual narratives. 
+                        From corporate videos to creative content, I combine technical precision with artistic vision 
+                        to deliver exceptional results.
+                    </p>
+                    <p>
+                        My approach focuses on understanding your story and translating it into engaging video content 
+                        that resonates with your audience and achieves your goals.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Software & Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Adobe Premiere Pro</span>
+                        <span class="skill-tag">After Effects</span>
+                        <span class="skill-tag">DaVinci Resolve</span>
+                        <span class="skill-tag">Final Cut Pro</span>
+                        <span class="skill-tag">Motion Graphics</span>
+                        <span class="skill-tag">Color Grading</span>
+                        <span class="skill-tag">Audio Editing</span>
+                        <span class="skill-tag">Storytelling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="projects" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image project-video">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Corporate Brand Film</h3>
+                        <p class="project-description">
+                            A dynamic brand story showcasing company values and culture through compelling visuals and narrative.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Premiere Pro</span>
+                            <span class="tech-tag">After Effects</span>
+                            <span class="tech-tag">Color Grading</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Watch Video</a>
+                            <a href="#" class="project-link">Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-video">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Music Video</h3>
+                        <p class="project-description">
+                            Creative music video with synchronized editing, effects, and visual storytelling that complements the artist's vision.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Final Cut Pro</span>
+                            <span class="tech-tag">Motion Graphics</span>
+                            <span class="tech-tag">VFX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Watch Video</a>
+                            <a href="#" class="project-link">Behind Scenes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-video">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Documentary Short</h3>
+                        <p class="project-description">
+                            Emotional documentary piece highlighting social issues through intimate interviews and powerful B-roll footage.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">DaVinci Resolve</span>
+                            <span class="tech-tag">Audio Mixing</span>
+                            <span class="tech-tag">Storytelling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Watch Video</a>
+                            <a href="#" class="project-link">Director's Notes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image project-video">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Commercial Advertisement</h3>
+                        <p class="project-description">
+                            High-energy commercial with quick cuts, motion graphics, and product-focused storytelling for maximum impact.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Premiere Pro</span>
+                            <span class="tech-tag">After Effects</span>
+                            <span class="tech-tag">3D Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Watch Video</a>
+                            <a href="#" class="project-link">Process</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎞️</div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing for all types of content including corporate videos, documentaries, and creative projects.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Motion Graphics</h3>
+                    <p>Custom motion graphics and animations to enhance your video content and engage your audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎵</div>
+                    <h3>Audio Post-Production</h3>
+                    <p>Complete audio editing, mixing, and sound design to ensure your video sounds as good as it looks.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌈</div>
+                    <h3>Color Grading</h3>
+                    <p>Professional color correction and grading to achieve the perfect look and mood for your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-description">
+                Ready to bring your vision to life? Let's discuss your project and create something amazing together.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📧 Email</h4>
+                        <a href="mailto:alex@example.com">alex@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>📱 Phone</h4>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>🌐 Social Media</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">YouTube</a>
+                            <a href="#" class="social-link">Vimeo</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Project Type">
+                    <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
