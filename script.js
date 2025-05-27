@@ -1,11 +1,15 @@
 
-// Mobile Navigation Toggle
-const navToggle = document.getElementById('nav-toggle');
-const navMenu = document.getElementById('nav-menu');
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 
 // Close mobile menu when clicking on a link
 const navLinks = document.querySelectorAll('.nav-link');
@@ -171,4 +175,5 @@ function createParticle() {
 }
 
 // Create particles periodically
-setInterval(createParticle, 300);
+    setInterval(createParticle, 300);
+});
