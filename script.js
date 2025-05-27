@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-// Add scroll effect to navigation
+    // Add scroll effect to navigation
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('.nav');
     if (window.scrollY > 100) {
