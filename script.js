@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
         });
-    }
 
-// Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
-});
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
 
 // Smooth scrolling for navigation links
 navLinks.forEach(link => {
